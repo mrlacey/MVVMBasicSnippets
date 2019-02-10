@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Property with backing field</Title>
+			<Shortcut>mbprop</Shortcut>
+			<Description>Code snippet for an MVVMBasic property with backing field</Description>
+			<Author>Matt Lacey</Author>
+			<HelpUrl>https://github.com/mrlacey/MVVMBasicSnippets</HelpUrl>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>Integer</Default>
+				</Literal>
+				<Literal>
+					<ID>property</ID>
+					<ToolTip>Property name</ToolTip>
+					<Default>MyProperty</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="vb" Kind="method decl"><![CDATA[Private _$property$ As $type$
+
+        Public Property $property$ As $type$
+            Get
+                Return _$property$
+            End Get
+            Set
+                  [Set](_$property$, value)
+            End Set
+        End Property$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="MVVMBasicSnippets.79e3f0e5-9be3-476f-8f73-86fc92f6e751" Version="1.0" Language="en-US" Publisher="Matt Lacey" />
+        <DisplayName>MVVMBasicSnippets</DisplayName>
+        <Description xml:space="preserve">MVVM Basic Code snippets</Description>
+        <MoreInfo>https://github.com/mrlacey/MVVMBasicSnippets</MoreInfo>
+        <License>Resources\LICENSE</License>
+        <Icon>Resources\Icon.png</Icon>
+        <Tags>MVVM, &lt;VV&lt; Basic, </Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 16.0)" />
+    </Installation>
+    <Dependencies>
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="VisualBasic\MVVM Basic\MVVMBasicVisualBasic.pkgdef" />
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="CSharp\MVVM Basic\MVVMBasicCSharp.pkgdef" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>

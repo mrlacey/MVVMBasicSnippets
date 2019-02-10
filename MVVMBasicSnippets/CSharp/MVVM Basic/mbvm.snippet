@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Empty ViewModel</Title>
+			<Shortcut>mbvm</Shortcut>
+			<Description>Code snippet for an MVVMBasic ViewModel</Description>
+			<Author>Matt Lacey</Author>
+			<HelpUrl>https://github.com/mrlacey/MVVMBasicSnippets</HelpUrl>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>ViewModel name</ToolTip>
+					<Default>MyViewModel</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp" Kind="type decl"><![CDATA[public class $name$ : Observable
+        {
+            $end$
+        }]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
