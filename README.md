@@ -17,7 +17,7 @@ See the [change log](CHANGELOG.md) for changes and road map.
 - **mbvm** Creates an empty View Model.
 - **mbprop** Creates a property with backing field.
 - **mbcmd** Creates an ICommand property returning RelayCommand.
-- **mbcmdt** Creates an ICommand property returning RelayCommand<T>.
+- **mbcmdt** Creates an ICommand property returning RelayCommand&lt;T&gt;.
 
 ## Contribute
 
