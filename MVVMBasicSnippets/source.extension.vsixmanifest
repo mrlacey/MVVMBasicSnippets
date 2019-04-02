@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="MVVMBasicSnippets.79e3f0e5-9be3-476f-8f73-86fc92f6e751" Version="1.0" Language="en-US" Publisher="Matt Lacey" />
+        <Identity Id="MVVMBasicSnippets.79e3f0e5-9be3-476f-8f73-86fc92f6e751" Version="1.1" Language="en-US" Publisher="Matt Lacey" />
         <DisplayName>MVVMBasicSnippets</DisplayName>
         <Description xml:space="preserve">MVVM Basic Code snippets</Description>
         <MoreInfo>https://github.com/mrlacey/MVVMBasicSnippets</MoreInfo>
