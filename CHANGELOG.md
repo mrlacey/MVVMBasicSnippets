@@ -9,7 +9,7 @@ on the official Visual Studio extension gallery.
 
 ## 1.1
 
-- [x] Add support fro VS2019
+- [x] Add support for VS2019
 
 ## 1.0
 
