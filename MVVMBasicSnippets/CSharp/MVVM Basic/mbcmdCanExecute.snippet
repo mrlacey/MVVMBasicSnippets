@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>ICommand property returning RelayCommand</Title>
+			<Shortcut>mbcmdCanExecute</Shortcut>
+			<Description>Code snippet for an MVVMBasic ICommand property that returns a RelayCommand with a CanExecute method</Description>
+			<Author>Matt Lacey</Author>
+			<HelpUrl>https://github.com/mrlacey/MVVMBasicSnippets</HelpUrl>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>command</ID>
+					<ToolTip>Command name</ToolTip>
+					<Default>MyCommand</Default>
+				</Literal>
+				<Literal>
+					<ID>event</ID>
+					<ToolTip>Event name</ToolTip>
+					<Default>OnEvent</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp" Kind="method decl">
+        <![CDATA[private ICommand _$command$;
+
+        public ICommand $command$ => _$command$ ?? (_$command$ = new RelayCommand($event$, CanExecute$event$));
+
+        private bool CanExecute$event$()
+        {
+            return true;
+        }
+
+        private void $event$()
+        {
+            $end$
+        }]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
