@@ -18,6 +18,8 @@ See the [change log](CHANGELOG.md) for changes and road map.
 - **mbprop** Creates a property with backing field.
 - **mbcmd** Creates an ICommand property returning RelayCommand.
 - **mbcmdt** Creates an ICommand property returning RelayCommand&lt;T&gt;.
+- **mbcmdCanExecute** Creates an ICommand property returning RelayCommand with a CanExecute method.
+- **mbcmdtCanExecute** Creates an ICommand property returning RelayCommand&lt;T&gt; with a CanExecute method.
 
 ## Contribute
 
