@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>ICommand property returning RelayCommand</Title>
-			<Shortcut>mbcmd</Shortcut>
-			<Description>Code snippet for an MVVMBasic ICommand property that returns a RelayCommand</Description>
+			<Title>RelayCommand property with CanExecute method</Title>
+			<Shortcut>mbcmdCanExecute</Shortcut>
+			<Description>Code snippet for an MVVMBasic ICommand property that returns a RelayCommand with a CanExecute method</Description>
 			<Author>Matt Lacey</Author>
 			<HelpUrl>https://github.com/mrlacey/MVVMBasicSnippets</HelpUrl>
 			<SnippetTypes>
@@ -29,12 +29,16 @@
         Public ReadOnly Property $command$ As ICommand
             Get
                 If _$command$ Is Nothing Then
-                    _$command$ = New RelayCommand(Sub() $event$())
+                    _$command$ = New RelayCommand(AddressOf $event$, AddressOf CanExecute$event$)
                 End If
 
                 Return _$command$
             End Get
         End Property
+
+        Private Function CanExecute$event$() As Boolean
+            Return True
+        End Function
 
         Private Sub $event$()
             $end$
