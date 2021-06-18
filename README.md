@@ -6,7 +6,7 @@ Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.m
 
 ---------------------------------------
 
-A collection of snippets to aid writing code for anyone using a the [MVVM Basic](https://github.com/Microsoft/WindowsTemplateStudio/blob/dev/docs/mvvmbasic.md) framework provided by [Windows Template Studio](https://aka.ms/wts).
+A collection of snippets to aid in writing code for anyone using the [MVVM Basic](https://github.com/Microsoft/WindowsTemplateStudio/blob/dev/docs/mvvmbasic.md) framework provided by [Windows Template Studio](https://aka.ms/wts).
 
 Supports C# and VB.
 
